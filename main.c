@@ -2,8 +2,12 @@
 #include <stdlib.h>
 
 #include "date.h"
+#include "person.h"
 
 int main() {
-    Date* date = create_date(29, 02, 2000);
-    print_date(date);
+    char* p = "Nathan";
+    char* n = "Galmiche";
+    Date* d = create_date(29, 02, 2000);
+    Person* person = create_person(p, n, d);
+    print_person(person);
 }
