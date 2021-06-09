@@ -10,4 +10,4 @@ Date* create_date(int d, int m, int y) {
     res->y = y;
     return res;
 }
-void print_date(Date* date) { printf("%d/%d/%d\n", date->d, date->m, date->y); }
+void print_date(Date* date) { printf("%d/%d/%d", date->d, date->m, date->y); }
