@@ -6,7 +6,7 @@
 #include "date.h"
 
 List* insert(Date* date, List* list) {
-    List* res = malloc(sizeof(date) + sizeof(list));
+    List* res = malloc(sizeof(List));
     res->value = date;
     res->next = list;
     return res;
@@ -21,7 +21,11 @@ void print_list_recu(List* list) {
     }
 }
 void print_list(List* list) {
-    printf("[");
-    print_list_recu(list);
-    printf("]");
+    if (!list) {
+        printf("[]");
+    } else {
+        printf("[");
+        print_list_recu(list);
+        printf("]");
+    }
 }

@@ -16,4 +16,6 @@ int main() {
     List* l = insert(d2, insert(d, NULL));
     print_list(l);
     printf("\n");
+    print_list(NULL);
+    printf("\n");
 }
